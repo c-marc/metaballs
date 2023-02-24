@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+canvas {
+  display: block;
+  /* these are the two magic lines*/
+  background: black;
+  filter: blur(10px) contrast(20); /*keep contrast higher than blur*/
+}
